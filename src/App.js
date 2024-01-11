@@ -6,14 +6,15 @@ import Textform from './components/Textform';
 // toast import
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import React, { useEffect } from 'react'
+import React, { useEffect , useState} from 'react';
+// import { SpeedInsights } from "@vercel/speed-insights/react";
 
 
 function App() {
   useEffect(() => {
-    toast('Free Text Utils !');
+    // toast('Free Text Utils !');
   });
-    const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
+  const [mode, setMode] = useState('light'); // Whether dark mode is enabled or not
 
   const toggleMode = ()=>{
     if(mode === 'light'){
@@ -27,16 +28,17 @@ function App() {
       toast('Light mode has been enabled');
     }
   }
-
   return (
     <>
       <ToastContainer />
-      <Navbar title="Editify" about="About Us" mode={mode} toggleMode={toggleMode} />
+      <Navbar title="TextUtils" about="About Us" mode={mode} toggleMode={toggleMode} />
 
-      // <Navbar title="Editify" about="About Us"/>
+      {/* <Navbar title="Text React App" about="About Us"/> */}
       <div className='container my-3'>
         <Textform heading='Enter the text 👇' mode={mode}/>
+        {/* <SpeedInsights /> */}
         <About/>
+
       </div>
 
     </>
