@@ -5,23 +5,11 @@ export default function Navbar(props) {
 
   // const [isDarkMode, setDarkMode] = useState(false);
 
-<<<<<<< HEAD
 
   
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode}`}>
      <a className='navbar-brand' href="https://editify.vercel.app/">{props.title}</a>
-=======
-  // const toggleMode = () => {
-  //   setDarkMode(!isDarkMode);
-  // };
-
-  
-  return (
-
-     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
-        <a className='navbar-brand' href="https://editify.vercel.app/">{props.title}</a>
->>>>>>> 9c9fc6de13a5d8cfc4cfd6ba8789e13a72700173
         <button className='navbar-toggler' type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className='navbar-toggler-icon'></span>
         </button>
@@ -34,15 +22,9 @@ export default function Navbar(props) {
         <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
                         {/* <input className="form-check-input"  type="checkbox" id="flexSwitchCheckDefault"/> */}
                         <button className="btn btn-primary mx-1 my-1 form-check-label" onClick={props.toggleMode} id="flexSwitchCheckDefault">Enable DarkMode</button>
-<<<<<<< HEAD
                     </div>
       </nav>
     
-=======
-        </div>
-      </nav>
-        
->>>>>>> 9c9fc6de13a5d8cfc4cfd6ba8789e13a72700173
   );
 }
 
