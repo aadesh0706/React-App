@@ -34,10 +34,6 @@ export default function Textform(props) {
         setText(event.target.value) 
     }
     
-<<<<<<< HEAD
-=======
-    // paste logic
->>>>>>> 9c9fc6de13a5d8cfc4cfd6ba8789e13a72700173
     const handlePasteClick=()=> {
         navigator.clipboard.readText()
       .then((text) => {
@@ -49,11 +45,6 @@ export default function Textform(props) {
         console.error('Error reading clipboard text:', error);
       });
       }
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 9c9fc6de13a5d8cfc4cfd6ba8789e13a72700173
 
 
     return (
@@ -65,10 +56,7 @@ export default function Textform(props) {
                 {/* <h1>{props.heading}</h1> */}
                 <textarea className='form-control' value={text} onChange={handleOnChange} style={{backgroundColor: props.mode==='dark'?'#13466e':'white', color: props.mode==='dark'?'white':'#042743'}} id="myBox" rows="8"></textarea>
             </div>
-<<<<<<< HEAD
 
-=======
->>>>>>> 9c9fc6de13a5d8cfc4cfd6ba8789e13a72700173
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleLowClick}>Convert to Lowercase</button>
             <button disabled={text.length===0} className="btn btn-primary mx-1 my-1" onClick={handleCopyClick}>Copy Text</button>
