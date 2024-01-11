@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <Navbar title="Text React App" about="About Us"/>
+      <Navbar title="Editify" about="About Us"/>
       <div className='container my-3'>
         <Textform heading='Enter the text 👇'/>
         <About/>
