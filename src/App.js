@@ -31,7 +31,7 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <Navbar title="TextUtils" about="About Us" mode={mode} toggleMode={toggleMode} />
+      <Navbar title="Editify" about="About Us" mode={mode} toggleMode={toggleMode} />
 
       {/* <Navbar title="Text React App" about="About Us"/> */}
       <div className='container my-3'>
