@@ -40,9 +40,18 @@ export default function Textform(props) {
     }
     
     // paste logic
-    const handlePasteClick=()=>{
-        // write logic for paste copied text
-    }
+    const handlePasteClick=()=> {
+        navigator.clipboard.readText()
+      .then((text) => {
+        // Validate or format text if needed
+        setText(text);
+        toast.success('Pasted Successfully!');
+      })
+      .catch((error) => {
+        console.error('Error reading clipboard text:', error);
+      });
+      }
+
 
 
 
