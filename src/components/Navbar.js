@@ -9,6 +9,8 @@ export default function Navbar(props) {
   
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode}`}>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5588927612636319"
+     crossorigin="anonymous"></script>
      <a className='navbar-brand' href="https://editify.vercel.app/">{props.title}</a>
         <button className='navbar-toggler' type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span className='navbar-toggler-icon'></span>
